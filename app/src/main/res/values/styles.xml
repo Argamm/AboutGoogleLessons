@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="NameStile">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/sp_20</item>
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:layout_marginTop">@dimen/dp_16</item>
+        <item name="android:paddingTop">@dimen/dp_8</item>
+    </style>
+</resources>
