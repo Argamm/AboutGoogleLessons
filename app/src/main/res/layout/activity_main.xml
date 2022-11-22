@@ -4,6 +4,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
+    
+    <data>
+        <variable
+            name="myName"
+            type="com.example.aboutme.MyName" />
+    </data>
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/containerActivity"
@@ -20,7 +26,7 @@
             style="@style/NameStile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/jony_deep"
+            android:text="@={myName.name}"
             android:textAlignment="center" />
 
         <androidx.appcompat.widget.AppCompatEditText
@@ -48,11 +54,13 @@
         <TextView
             android:id="@+id/nicknameText"
             style="@style/NameStile"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:drawableLeft="@drawable/ic_man"
             android:drawableRight="@drawable/ic_man_zero"
             android:textAlignment="center"
+            android:layout_gravity="center"
+            android:text="@={myName.nickName}"
             android:visibility="gone" />
 
         <androidx.appcompat.widget.AppCompatImageView
